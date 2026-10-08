@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas | Alessandra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Moedas</h1>
+    <p class="subtitulo">Converta valores em tempo real</p>
+
+    <div class="campo">
+      <label>Valor</label>
+      <input type="number" id="valor" placeholder="Digite o valor" value="1">
+    </div>
+
+    <div class="seletores">
+      <div class="campo">
+        <label>De</label>
+        <select id="moeda-origem">
+          <option value="BRL">Real (BRL)</option>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra (GBP)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="ARS">Peso Argentino (ARS)</option>
+        </select>
+      </div>
+
+      <button id="btn-trocar" title="Trocar moedas">⇄</button>
+
+      <div class="campo">
+        <label>Para</label>
+        <select id="moeda-destino">
+          <option value="USD">Dólar (USD)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra (GBP)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="ARS">Peso Argentino (ARS)</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="btn-converter">Converter</button>
+
+    <div id="resultado" class="resultado">
+      <p>Resultado aparecerá aqui</p>
+    </div>
+
+    <p class="aviso">Cotação atualizada em tempo real</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
